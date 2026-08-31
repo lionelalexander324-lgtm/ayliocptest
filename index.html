@@ -1,0 +1,185 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#ff9418"><title>决战政瞳糖点之巅！</title><link rel="preload" as="image" href="assets/background-wolf-cat.webp"><style>
+:root{--orange:#ff9418;--deep:#d96908;--cream:#fff8ec;--peach:#fff0dc;--ink:#4b3424;--muted:#8b705e;--line:#513725;--shadow:0 7px 0 var(--line),0 14px 30px rgba(224,120,0,.18)}*{box-sizing:border-box;margin:0;padding:0}html,body{min-height:100%;background:#f4dbc0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}button{font:inherit}body{display:flex;justify-content:center;min-height:100svh}.app{position:relative;width:100%;max-width:430px;min-height:100svh;overflow:hidden;background:var(--peach) url("assets/background-wolf-cat.webp") center/cover no-repeat;box-shadow:0 0 40px rgba(75,52,36,.15)}.app:before{content:"";position:absolute;inset:0;background:rgba(255,245,229,.68);pointer-events:none}.screen{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;padding:max(18px,env(safe-area-inset-top)) 18px max(18px,env(safe-area-inset-bottom));overflow:auto;opacity:0;transform:scale(.97);pointer-events:none;visibility:hidden;transition:.25s}.screen.active{visibility:visible;opacity:1;transform:none;pointer-events:auto}.start{align-items:center;justify-content:center;text-align:center;gap:18px}.panel{width:100%;background:rgba(255,248,236,.94);border:3px solid var(--line);border-radius:25px;box-shadow:var(--shadow)}.hero{padding:25px 18px 22px}h1{font-size:30px;line-height:1.2;color:var(--orange);text-shadow:1.5px 1.5px 0 var(--line)}.lead{margin-top:11px;font-size:14px;line-height:1.65;color:var(--muted)}.mascot{width:190px;height:170px;object-fit:contain;filter:drop-shadow(0 7px 0 rgba(75,52,36,.16));animation:float 2.4s ease-in-out infinite}.mascot-tappable{cursor:pointer;touch-action:manipulation}.mascot-tappable.shake{animation:mascotShake .5s ease!important}.primary{border:3px solid var(--line);border-radius:999px;background:var(--orange);color:#fff;font-size:18px;font-weight:900;padding:13px 30px;box-shadow:0 6px 0 var(--line);cursor:pointer;transition:.12s}.primary:active{transform:translateY(4px);box-shadow:0 2px 0 var(--line)}.header{position:sticky;top:-1px;z-index:4;padding:2px 0 10px;background:linear-gradient(var(--peach) 78%,transparent)}.topline{position:relative;display:flex;align-items:center;min-height:27px}.round-title{position:absolute;left:50%;transform:translateX(-50%);font-weight:900;font-size:19px;white-space:nowrap}.counter{margin-left:auto;font-size:12px;font-weight:800;color:var(--deep)}.progress{height:42px;margin-top:7px;display:flex;align-items:center;justify-content:center;padding:5px 9px;background:rgba(255,248,236,.84);border:1.5px solid var(--orange);border-radius:14px;box-shadow:0 2px 7px rgba(255,148,24,.16)}.stage-wrap{display:grid;place-items:center;flex:0 0 30px;height:30px;opacity:.38;transition:.25s}.stage-wrap.passed,.stage-wrap.active{opacity:1}.stage-wrap.active{transform:scale(1.13);filter:drop-shadow(0 0 6px rgba(255,148,24,.52));animation:stageHop 1.25s ease-in-out infinite}.track-face{display:block;width:27px;height:27px;background:url("assets/progress-cat-wolf.webp") left center/200% auto no-repeat}.track-face.wolf{background-position:right center;transform:scale(.9)}.track-crown{font-size:23px}.connector{flex:1;max-width:27px;height:2px;background:rgba(255,148,24,.38)}.connector.passed{background:var(--orange)}.guide{display:flex;align-items:center;justify-content:center;gap:9px;margin:3px 0 8px;padding:7px 10px;background:rgba(255,248,236,.94);border:2px solid var(--line);border-radius:16px;text-align:center}.guide img{width:42px;height:38px;object-fit:contain}.guide span{font-size:12px;font-weight:800}.toolbar{display:flex;justify-content:flex-end;margin-bottom:7px}.undo{border:2px solid var(--line);border-radius:99px;background:var(--cream);color:var(--ink);font-size:12px;font-weight:800;padding:6px 11px;box-shadow:0 3px 0 var(--line);cursor:pointer}.undo:disabled{opacity:.38;box-shadow:none}.cards{flex:1;display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:12px;padding:2px 0 10px}.card{position:relative;width:100%;min-height:126px;display:grid;place-content:center;justify-items:center;gap:7px;padding:20px 54px;text-align:center;background:rgba(255,250,242,.96);border:3px solid var(--orange);border-radius:23px;box-shadow:var(--shadow);cursor:pointer;color:var(--ink);transition:.22s}.card:focus-visible{outline:4px solid rgba(255,148,24,.35);outline-offset:3px}.card:active{transform:scale(.985)}.card.picked{transform:scale(1.025);background:#fff;border-width:4px}.card.lost{opacity:.3;transform:scale(.95);filter:grayscale(.6)}.date{position:absolute;left:16px;top:13px;font-size:12px;font-weight:900;color:var(--deep)}.title{max-width:100%;font-size:19px;font-weight:900;line-height:1.35;text-wrap:balance}.desc{max-width:100%;font-size:13px;line-height:1.55;color:var(--muted);text-wrap:balance}.card-mark{position:absolute;right:10px;bottom:9px;width:43px;height:40px;object-fit:contain;opacity:.68}.badge{display:none;position:absolute;right:10px;top:10px;padding:3px 7px;background:var(--orange);color:#fff;border:1.5px solid var(--line);border-radius:9px;font-size:10px;font-weight:900;transform:rotate(5deg)}.picked .badge{display:block}.vs{align-self:center;display:grid;place-items:center;width:42px;height:42px;margin:-4px 0;border:3px solid var(--line);border-radius:50%;background:var(--orange);color:#fff;font-weight:1000;box-shadow:0 4px 0 var(--line);transform:rotate(-5deg)}.triple{justify-content:flex-start}.triple .card{min-height:112px;padding-top:14px;padding-bottom:14px}.triple .title{font-size:17px}.triple .desc{font-size:12px}.transition{align-items:center;justify-content:center;text-align:center;gap:16px}.clear-title{font-size:30px;font-weight:1000;color:var(--orange);text-shadow:2px 2px 0 var(--line)}.transition .mascot{width:155px;height:145px}.survive{font-size:19px;font-weight:900}.champion{align-items:center;text-align:center;gap:11px;padding-top:max(20px,env(safe-area-inset-top));padding-bottom:24px}.champion h2{font-size:23px;color:var(--orange)}.crown{font-size:45px;line-height:1;animation:crownDrop .7s ease both}.result-main,.champion-slot{position:relative;width:100%}.champion-card{min-height:145px;padding:28px 24px;border-width:3px;box-shadow:0 0 22px rgba(255,148,24,.3),0 6px 0 var(--line);animation:cardGlow .8s .35s ease both}.champion-card .card-mark,.champion-card .badge{display:none}.result-mascot{position:absolute;right:-5px;bottom:-12px;width:72px;height:66px;object-fit:contain;z-index:2}.winner-speech{position:absolute;right:40px;bottom:52px;z-index:3;padding:6px 9px;border:1.5px solid var(--orange);border-radius:11px;background:var(--cream);box-shadow:0 3px 8px rgba(81,55,37,.1);font-size:10px;font-weight:800;white-space:nowrap;opacity:0;transform:translateY(4px) scale(.94);transition:.35s}.winner-speech:after{content:"";position:absolute;right:11px;bottom:-5px;width:8px;height:8px;background:var(--cream);border-right:1.5px solid var(--orange);border-bottom:1.5px solid var(--orange);transform:rotate(45deg)}.winner-speech.show{opacity:1;transform:none}.top-three{width:100%;padding:13px 16px;background:rgba(255,248,236,.84);border:1.5px solid rgba(81,55,37,.3);border-radius:17px;text-align:left}.top-three h3{text-align:center;font-size:15px;margin-bottom:8px}.top-row{display:grid;grid-template-columns:30px 1fr auto;gap:8px;align-items:center;padding:5px 0;font-size:13px}.rank{font-weight:900;color:#9a806d}.top-row:first-of-type .rank,.top-row:first-of-type .top-title{color:var(--deep)}.top-title{font-weight:800}.top-date{font-size:11px;color:var(--muted)}.share-quote{padding:2px 10px;color:#72513a;font-size:13px;line-height:1.5;font-style:italic}.result-actions{width:100%;display:grid;gap:9px}.share-button,.secondary{width:100%}.secondary{border:1.5px solid var(--orange);border-radius:999px;background:rgba(255,248,236,.8);color:var(--deep);font-weight:900;padding:11px;cursor:pointer}.modal{position:absolute;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(75,52,36,.48);backdrop-filter:blur(3px)}.modal.open{display:flex}.dialog{width:100%;max-width:350px;padding:23px;background:var(--cream);border:3px solid var(--line);border-radius:23px;box-shadow:0 8px 0 var(--line);text-align:center}.dialog p{margin:10px 0 18px;color:var(--muted);font-size:14px;line-height:1.55}.actions{display:flex;gap:10px}.actions button{flex:1;border:2px solid var(--line);border-radius:99px;padding:10px;font-weight:900}.cancel{background:#fff}.confirm{background:var(--orange);color:#fff}.easter-bubble{position:absolute;z-index:30;max-width:230px;padding:9px 12px;border:2px solid var(--orange);border-radius:14px;background:var(--cream);box-shadow:0 5px 14px rgba(81,55,37,.14);font-size:13px;font-weight:800;text-align:center;opacity:0;transform:translate(-50%,-5px) scale(.92);pointer-events:none;transition:.2s}.easter-bubble:before{content:"";position:absolute;left:50%;top:-7px;width:11px;height:11px;background:var(--cream);border-left:2px solid var(--orange);border-top:2px solid var(--orange);transform:translateX(-50%) rotate(45deg)}.easter-bubble.show{opacity:1;transform:translate(-50%,0) scale(1)}.confetti{position:absolute;top:-15px;width:8px;height:13px;background:var(--orange);animation:fall 2.8s linear forwards;pointer-events:none}@keyframes float{50%{transform:translateY(-7px) rotate(-1deg)}}@keyframes stageHop{50%{transform:scale(1.22)}}@keyframes mascotShake{20%{transform:rotate(-8deg)}40%{transform:rotate(8deg)}60%{transform:rotate(-6deg)}80%{transform:rotate(5deg)}}@keyframes crownDrop{from{opacity:0;transform:translateY(-25px) rotate(-8deg)}to{opacity:1;transform:none}}@keyframes cardGlow{from{opacity:.7;transform:scale(.97)}50%{filter:brightness(1.12)}to{opacity:1;transform:none;filter:none}}@keyframes fall{to{transform:translateY(105svh) rotate(520deg);opacity:.1}}@media(min-width:520px){body{padding:18px}.app{min-height:calc(100svh - 36px);height:860px;max-height:calc(100svh - 36px);border:4px solid var(--line);border-radius:28px}}@media(max-height:720px){.screen{padding-top:12px}.card{min-height:105px;padding-top:12px;padding-bottom:12px}.cards{gap:8px}.vs{width:36px;height:36px}.triple .card{min-height:88px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style><style>
+.track-award{display:block;width:28px;height:28px;background:url("assets/award-crown-trophy.webp") left center/200% auto no-repeat}
+.guide{min-height:64px;gap:11px;padding:7px 12px}
+.guide img{width:54px;height:50px;flex:0 0 54px}
+.guide span{font-size:15px;line-height:1.3}
+.champion-heading{display:flex;align-items:center;justify-content:center;gap:5px;width:100%;margin:10px 0 3px}
+.champion-heading h2{font-size:27px;color:var(--orange);line-height:1.2}
+.heading-face{display:block;width:34px;height:34px;flex:0 0 34px;background:url("assets/progress-cat-wolf.webp") left center/200% auto no-repeat}
+.heading-face.wolf{background-position:right center;transform:scale(.9)}
+.cards:not(.triple){gap:16px}
+.vs{width:37px;height:37px;margin:0;border-width:2.5px;box-shadow:0 2px 0 var(--line);font-size:14px}
+.champion .result-actions{margin-top:12px}
+.champion{justify-content:center}
+@media(max-height:620px){.champion{justify-content:flex-start}}
+</style><style>.screen:not(.active) .heading-face,.screen:not(.active) .track-face,.screen:not(.active) .track-award{background-image:none}</style></head><body><main class="app">
+<section id="start" class="screen start active"><div class="panel hero"><h1>决战政瞳糖点之巅！</h1><p class="lead">一路二选一，选出最让你心动的政瞳糖点。</p></div><img class="mascot mascot-tappable" fetchpriority="high" decoding="async" src="assets/battle-pillow.webp" alt="战斗小枕头" onclick="tapMascot(this)"><button class="primary" onclick="startGame()">开始挑战 🍊</button></section>
+<section id="game" class="screen"><header class="header"><div class="topline"><div id="roundTitle" class="round-title">第一轮</div><div id="counter" class="counter">第 1 组 / 共 24 组</div></div><div id="progress" class="progress"></div></header><div class="guide"><img class="mascot-tappable" decoding="async" data-src="assets/battle-pillow.webp" alt="战斗小枕头" onclick="tapMascot(this)"><span id="guideText">请选择更喜欢的糖点</span></div><div class="toolbar"><button id="undoBtn" class="undo" onclick="undoLast()">回到上一题</button></div><div id="cards" class="cards"></div></section>
+<section id="transition" class="screen transition"><div id="clearTitle" class="clear-title">本轮完成！</div><img class="mascot mascot-tappable" decoding="async" data-src="assets/battle-pillow.webp" alt="战斗小枕头" onclick="tapMascot(this)"><div id="survive" class="survive"></div><button class="primary" onclick="continueRound()">进入下一轮 🍊</button><button id="transitionUndo" class="undo" onclick="undoLast()">回到上一题</button></section>
+<section id="champion" class="screen champion"><div class="champion-heading"><h2>我的政瞳糖点冠军</h2><span class="heading-face wolf" aria-hidden="true"></span><span class="heading-face cat" aria-hidden="true"></span></div><div class="result-main"><div id="championSlot" class="champion-slot"></div><span class="winner-speech">冠军诞生啦！</span><img class="result-mascot mascot-tappable" decoding="async" data-src="assets/battle-pillow.webp" alt="战斗小枕头" onclick="tapMascot(this)"></div><section class="top-three"><h3>我的 TOP 3</h3><div id="topThreeList"></div></section><div class="result-actions"><button class="primary share-button" onclick="generateShareImage()">生成分享图</button><button class="secondary" onclick="startGame()">再玩一次</button></div></section>
+<div id="confirmModal" class="modal" role="dialog" aria-modal="true"><div class="dialog"><h3>确认淘汰这个糖点？</h3><p id="dialogText"></p><div class="actions"><button class="cancel" onclick="closeConfirm()">再想想</button><button class="confirm" onclick="confirmElimination()">确认淘汰</button></div></div></div><div id="easterBubble" class="easter-bubble" aria-live="polite"></div></main><script>
+const cardsData=[
+{date:"5.21",title:"机场1.0",desc:"第一次机场出圈"},{date:"6.01",title:"机场2.0",desc:"两口子被挤摔倒"},{date:"7.26",title:"泰国见面会",desc:"吃成巨人观"},{date:"8.26",title:"澳门见面会",desc:"稳稳的幸福"},{date:"8.08",title:"微博之夜",desc:"两口子签名也要挨着，还画了小枕头；全程贴贴"},{date:"6.04",title:"红星大奖",desc:"瞳飞新加坡陪政参加活动，成功打入政好友圈"},{date:"6.13",title:"ELLEMAN晚宴",desc:"名利场夫夫"},{date:"7.04",title:"花西子直播",desc:"美味的sw直播"},{date:"7.03",title:"爱茉莉陪同直播",desc:"瞳偷偷藏不住口误说孙老师"},{date:"5.20",title:"520凌晨直播",desc:"互说520快乐；政送lv香水；第二天一起去长春"},{date:"5.24",title:"524微醺直播",desc:"很多名场面，政阴湿感拉满"},{date:"5.28",title:"突袭健身房直播",desc:"私下小情侣日常"},{date:"6.09",title:"发卖1.0直播",desc:"“他真诚待我 我真诚待他” “我们就是这样”"},{date:"6.11",title:"维港直播",desc:"“刚才看到有一对小情侣在拍照，你要是想拍，我们也可以拍呀”"},{date:"7.09",title:"709连线直播",desc:"私下不同的风味，情侣感十足"},{date:"8.02",title:"大王来抓我小游戏直播",desc:"“我不要策挖了你策挖吧，策挖不好还要被你说”"},{date:"8.09",title:"微博之夜澄清直播",desc:"瞳护夫；政秀手机壳"},{date:"8.15",title:"815直播-大王来抓我澳门大床房版",desc:"“在你面前还是要点面子”"},{date:"8.19",title:"七夕直播互送礼物",desc:"两人都眼泪汪汪的，感情浓度拉满"},{date:"8.25",title:"家庭会议",desc:"政很自然地吃瞳剩饭"},{date:"6.20",title:"双程收官视频",desc:"咬人是一种顶级示爱的方式"},{date:"5.31",title:"阿那亚vlog",desc:"淡淡的忧伤"},{date:"6.22",title:"米兰vlog",desc:"两口子互吃口水"},{date:"6.24",title:"安纳西vlog",desc:"暖胃背背"},{date:"7.09",title:"沈阳vlog",desc:"两人睡一张床！"},{date:"7.08",title:"长春vlog",desc:"“我的财分你一半”"},{date:"8.17",title:"泰国洗大象vlog",desc:"萌萌的两口子一起大象"},{date:"8.23",title:"居家vlog",desc:"幸福就是一起吃饭看电视散步"},{date:"6.15",title:"上海雨夜",desc:"两口子吵架街头吵架之“我们很好”"},{date:"7.11",title:"台风接机",desc:"飞机延误 瞳等了四个多小时"},{date:"8.21",title:"共享资源-新加坡免税店推广",desc:"政全力托举，瞳芝士萌萌的笑"},{date:"8.08",title:"微博之夜黄油小熊共创",desc:"ddbb风味拉满"},{date:"5.29",title:"黑白配共创",desc:"典攻典受牛比"},{date:"7.15",title:"咳嗽舞共创",desc:"抖舞代跳之自导自演自发自评论"},{date:"8.2",title:"正太扭腰舞",desc:"一起搞抽象"},{date:"8.21",title:"re戒指视频",desc:"小情侣回顾初见之时"},{date:"8.13",title:"QQ音乐申请ip",desc:"政说到做到"},{date:"6.11",title:"碰星专访",desc:"很般配的两口子"},{date:"",title:"蓝村衫🛏️合集",desc:"蓝色战袍名不虚传！两口子一拍起🛏️就发狠了忘情了"},{date:"8.28",title:"安敏优拍摄花絮",desc:"私下打打闹闹，自带情侣结界"},{date:"8.30",title:"瞳陪政出席枫缇晚宴",desc:"两口子互拍好暖胃吧；下班时政化身保镖保护瞳"},{date:"6.14",title:"“你要对我好一点”",desc:"七字真言"},{date:"8.29",title:"凌晨取关",desc:"政折腾一晚上，关注最终停留在瞳生日227"},{date:"8.19",title:"七夕瞳抖音日常之秀宝格丽戒指",desc:"bgm：爱久见人心"},{date:"6.11",title:"第9集re",desc:"瘪嘴擦眼泪；“我知道你在想什么”"},{date:"6.5",title:"第8集re",desc:"我又不会吃了你"},{date:"8.29",title:"政新加坡接亲",desc:"意气风发！做了造型用迈巴赫接老婆"},{date:"8.29",title:"精英男西装里贴着奥特曼贴纸",desc:"嫂嫂坤续秀！"}].map((c,id)=>({...c,id,mark:1+Math.floor(Math.random()*13)}));
+cardsData.forEach(card=>card.mark=1+Math.floor(Math.random()*14));
+const stages=[48,24,12,6,3,2,1];let pool=[],nextPool=[],matchIndex=0,stage=48,history=[],busy=false,pendingElimination=null,eliminatedThird=null,finalistLoser=null,currentMatchStartTime=0,normalMatchIdleTimer=null,finalThreeTimer10=null,finalThreeTimer20=null,finalThreeEnteredAt=0,finalThreeHint10Shown=false,finalThreeHint20Shown=false,undoStreak=0,mascotTapCount=0,mascotTapTimer=null,bubbleTimer=null,bubblePriority=0,winnerSpeechTimer=null;const $=id=>document.getElementById(id);
+function clearGameTimers(){clearTimeout(normalMatchIdleTimer);clearTimeout(finalThreeTimer10);clearTimeout(finalThreeTimer20)}function resetMascotTaps(){clearTimeout(mascotTapTimer);mascotTapTimer=null;mascotTapCount=0}function hideBubble(){clearTimeout(bubbleTimer);bubblePriority=0;$('easterBubble').classList.remove('show')}function show(id){clearGameTimers();hideBubble();resetMascotTaps();document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));$(id).classList.add('active');$(id).querySelectorAll('img[data-src]').forEach(img=>{img.src=img.dataset.src;img.removeAttribute('data-src')})}function shuffle(a){a=[...a];for(let i=a.length-1;i;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}function snapshot(){return{pool:[...pool],nextPool:[...nextPool],matchIndex,stage,eliminatedThird,finalistLoser}}function restore(s){pool=s.pool;nextPool=s.nextPool;matchIndex=s.matchIndex;stage=s.stage;eliminatedThird=s.eliminatedThird;finalistLoser=s.finalistLoser;busy=false;show('game');render()}function startGame(){clearTimeout(winnerSpeechTimer);document.querySelector('.winner-speech').classList.remove('show');pool=shuffle(cardsData);nextPool=[];matchIndex=0;stage=48;history=[];busy=false;eliminatedThird=finalistLoser=null;finalThreeEnteredAt=0;finalThreeHint10Shown=finalThreeHint20Shown=false;undoStreak=0;show('game');render()}
+function progress(){let ci=stages.indexOf(stage);$('progress').innerHTML=stages.map((n,i)=>`${i?`<span class="connector ${i<=ci?'passed':''}"></span>`:''}<span class="stage-wrap ${i<ci?'passed':i===ci?'active':''}">${n===1?'<span class="track-award" aria-label="王冠"></span>':`<span class="track-face ${i%2?'cat':'wolf'}"></span>`}</span>`).join('')}function cardHTML(c){let m=String(c.mark).padStart(2,'0');return `<span class="badge">已选择 💕</span>${c.date?`<span class="date">🍊 ${c.date}</span>`:''}<span class="title">${c.title}</span>${c.desc?`<span class="desc">${c.desc}</span>`:''}<img decoding="async" width="43" height="40" class="card-mark" src="assets/doodle-${m}.webp" alt="">`}function makeCard(c,action){let b=document.createElement('button');b.className='card';b.innerHTML=cardHTML(c);b.onclick=action;return b}function roundName(){return({48:'第一轮',24:'第二轮',12:'第三轮',6:'第四轮',3:'三进二淘汰轮',2:'最终决赛'})[stage]}
+function startMatchTimers(){clearGameTimers();currentMatchStartTime=performance.now();if(stage===3){if(!finalThreeEnteredAt)finalThreeEnteredAt=performance.now();let e=performance.now()-finalThreeEnteredAt;if(!finalThreeHint10Shown)finalThreeTimer10=setTimeout(()=>{finalThreeHint10Shown=true;showBubble('这么难选吗',5)},Math.max(0,1e4-e));if(!finalThreeHint20Shown)finalThreeTimer20=setTimeout(()=>{finalThreeHint20Shown=true;showBubble('必须淘汰一个哦……',5)},Math.max(0,2e4-e))}else normalMatchIdleTimer=setTimeout(()=>showBubble('还没选出来吗 👀',2),1e4)}function render(){hideBubble();progress();$('roundTitle').textContent=roundName();$('cards').className='cards'+(stage===3?' triple':'');$('cards').innerHTML='';$('undoBtn').disabled=!history.length||busy;if(stage===3){$('counter').textContent='第 1 组 / 共 1 组';$('guideText').textContent='请选择要淘汰的一个';pool.forEach((c,i)=>$('cards').appendChild(makeCard(c,()=>askElimination(i))));startMatchTimers();return}$('guideText').textContent=stage===2?'最后一次选择，选出你的冠军！':'请选择更喜欢的糖点';$('counter').textContent=`第 ${matchIndex/2+1} 组 / 共 ${pool.length/2} 组`;let a=makeCard(pool[matchIndex],()=>pick(0,a,b)),b=makeCard(pool[matchIndex+1],()=>pick(1,b,a)),v=document.createElement('div');v.className='vs';v.textContent='VS';$('cards').append(a,v,b);startMatchTimers()}
+function pick(i,w,l){if(busy)return;let fast=performance.now()-currentMatchStartTime<=1e3;clearGameTimers();busy=true;undoStreak=0;history.push(snapshot());w.classList.add('picked');l.classList.add('lost');w.disabled=l.disabled=true;let win=pool[matchIndex+i];if(stage===2)finalistLoser=pool[matchIndex+(i?0:1)];nextPool.push(win);if(fast)showBubble('毫不犹豫！',3);setTimeout(()=>{matchIndex+=2;if(matchIndex>=pool.length)advance();else{busy=false;render()}},480)}function advance(){let prev=stage;pool=[...nextPool];nextPool=[];matchIndex=0;stage=pool.length;busy=false;if(stage===3){finalThreeEnteredAt=0;finalThreeHint10Shown=finalThreeHint20Shown=false}if(stage===1){showChampion();return}$('clearTitle').textContent=({48:'第一轮',24:'第二轮',12:'第三轮',6:'第四轮'})[prev]+'完成！';$('survive').textContent=stage===3?'最后 3 个糖点进入特殊淘汰轮':`还剩 ${stage} 个糖点继续晋级`;$('transitionUndo').disabled=!history.length;show('transition')}function continueRound(){show('game');render()}function undoLast(){if(busy||!history.length)return;let s=history.pop();undoStreak++;restore(s);if(undoStreak>=3){undoStreak=0;showBubble('你真的想好了吗！',4)}}function askElimination(i){clearGameTimers();pendingElimination=i;$('dialogText').textContent=`“${pool[i].title}”将被淘汰，剩下两个进入最终决赛。`;$('confirmModal').classList.add('open')}function closeConfirm(){pendingElimination=null;$('confirmModal').classList.remove('open');if(stage===3)startMatchTimers()}function confirmElimination(){if(pendingElimination===null)return;eliminatedThird=pool[pendingElimination];pool=pool.filter((_,i)=>i!==pendingElimination);stage=2;matchIndex=0;nextPool=[];$('confirmModal').classList.remove('open');show('game');render()}
+function activeMascot(){return document.querySelector('.screen.active .mascot-tappable')}function showBubble(text,p,anchor=activeMascot()){let b=$('easterBubble');if(b.classList.contains('show')&&p<bubblePriority)return;clearTimeout(bubbleTimer);bubblePriority=p;b.textContent=text;let ar=document.querySelector('.app').getBoundingClientRect(),r=anchor?anchor.getBoundingClientRect():ar;b.style.left=Math.max(115,Math.min(ar.width-115,r.left-ar.left+r.width/2))+'px';b.style.top=(r.bottom-ar.top+7)+'px';b.classList.add('show');bubbleTimer=setTimeout(hideBubble,2600)}function tapMascot(el){if(!mascotTapTimer){mascotTapCount=1;mascotTapTimer=setTimeout(resetMascotTaps,2e3)}else mascotTapCount++;if(mascotTapCount>=3){resetMascotTaps();el.classList.add('shake');setTimeout(()=>el.classList.remove('shake'),600);showBubble('别戳我，我在主持比赛。',1,el)}}
+function showChampion(){show('champion');let winner=pool[0],card=makeCard(winner,()=>{});card.disabled=true;card.classList.add('champion-card');$('championSlot').replaceChildren(card);let top3=[winner,finalistLoser,eliminatedThird].filter(Boolean);$('topThreeList').innerHTML=top3.map((x,i)=>`<div class="top-row"><span class="rank">${String(i+1).padStart(2,'0')}</span><span class="top-title">${x.title}</span><span class="top-date">${x.date||''}</span></div>`).join('');let speech=document.querySelector('.winner-speech');speech.classList.add('show');winnerSpeechTimer=setTimeout(()=>speech.classList.remove('show'),5e3);for(let i=0;i<28;i++){let x=document.createElement('i');x.className='confetti';x.style.left=Math.random()*100+'%';x.style.animationDelay=Math.random()*1.8+'s';x.style.background=i%3===0?'#ffd27b':i%2?'#ff9418':'#e46f0c';$('champion').appendChild(x);setTimeout(()=>x.remove(),5e3)}}
+function rr(c,x,y,w,h,r){c.beginPath();c.roundRect(x,y,w,h,r);c.closePath()}function wrap(c,t,x,y,w,lh,max=3){let l='',a=[];for(let ch of [...t]){let q=l+ch;if(c.measureText(q).width>w&&l){a.push(l);l=ch}else l=q}if(l)a.push(l);a.slice(0,max).forEach((s,i)=>c.fillText(s,x,y+i*lh));return y+Math.min(a.length,max)*lh}function fit(c,t,x,y,w,s=31){while(s>21){c.font=`700 ${s}px sans-serif`;if(c.measureText(t).width<=w)break;s--}c.fillText(t,x,y)}function loadImg(src){return new Promise((ok,no)=>{let i=new Image;i.onload=()=>ok(i);i.onerror=no;i.src=src})}function cover(c,i,x,y,w,h){let k=Math.max(w/i.width,h/i.height),sw=w/k,sh=h/k;c.drawImage(i,(i.width-sw)/2,(i.height-sh)/2,sw,sh,x,y,w,h)}
+// Sharing is optional: never block startup on the embedded image bundle.
+let shareAssetsPromise = null;
+function loadShareAssets() {
+  if (window.SHARE_ASSETS) return Promise.resolve(window.SHARE_ASSETS);
+  if (shareAssetsPromise) return shareAssetsPromise;
+  shareAssetsPromise = new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = 'assets/share-assets.js?v=3';
+    script.async = true;
+    const timer = setTimeout(() => finish(new Error('Share assets timed out')), 20000);
+    function finish(error) {
+      clearTimeout(timer);
+      script.onload = script.onerror = null;
+      script.remove();
+      if (error) { shareAssetsPromise = null; reject(error); }
+      else resolve(window.SHARE_ASSETS);
+    }
+    script.onload = () => finish(window.SHARE_ASSETS ? null : new Error('Invalid share assets'));
+    script.onerror = () => finish(new Error('Share assets failed to load'));
+    document.head.appendChild(script);
+  });
+  return shareAssetsPromise;
+}
+// Share-only typography helpers: never truncate the underlying game data.
+function shareLines(c, text, maxWidth) {
+  const lines = [];
+  let line = '';
+  for (const ch of [...text]) {
+    if (line && c.measureText(line + ch).width > maxWidth) {
+      lines.push(line);
+      line = ch;
+    } else line += ch;
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+function shareText(c, text, width, size, minSize, maxLines, weight) {
+  let lines;
+  do {
+    c.font = `${weight} ${size}px sans-serif`;
+    lines = shareLines(c, text, width);
+    if (lines.length <= maxLines || size <= minSize) break;
+    size -= 1;
+  } while (true);
+  return { lines, size, lineHeight: Math.round(size * 1.3), weight };
+}
+function paintShareText(c, block, x, y, color) {
+  c.fillStyle = color;
+  c.font = `${block.weight} ${block.size}px sans-serif`;
+  block.lines.forEach((line, i) => c.fillText(line, x, y + i * block.lineHeight));
+}
+async function loadResultQr() {
+  const img = new Image();
+  img.src = 'assets/images/zt-qr-code.png';
+  // Decode the original PNG, never a resized screenshot or the old bundle QR.
+  await img.decode();
+  if (!img.naturalWidth || img.naturalWidth !== img.naturalHeight) throw new Error('Invalid QR image');
+  return img;
+}
+async function generateShareImage() {
+  const winner = pool[0], button = document.querySelector('.share-button');
+  if (!winner || button.disabled) return;
+  const old = button.textContent;
+  const top3 = [winner, finalistLoser, eliminatedThird].filter(Boolean);
+  button.disabled = true;
+  button.textContent = '正在生成…';
+  try {
+    const [assets, qr] = await Promise.all([loadShareAssets(), loadResultQr()]);
+    const [bg, faces, mascot] = await Promise.all([
+      loadImg(assets.background), loadImg(assets.faces), loadImg(assets.mascot)
+    ]);
+    const cv = document.createElement('canvas'), c = cv.getContext('2d');
+    // Preserve the original 1080:1700 export aspect ratio and resolution.
+    cv.width = 1080; cv.height = 1700;
+    c.fillStyle = '#fff0dc'; c.fillRect(0, 0, 1080, 1700);
+    c.save(); c.globalAlpha = .17; cover(c, bg, 0, 0, 1080, 1700); c.restore();
+    c.fillStyle = 'rgba(255,241,220,.34)'; c.fillRect(0, 0, 1080, 1700);
+
+    // Keep the confirmed heading baseline and wolf/cat position unchanged.
+    c.fillStyle = '#ff9418'; c.font = '900 62px sans-serif'; c.textAlign = 'center';
+    const heading = '我的政瞳糖点冠军', hw = c.measureText(heading).width;
+    const hx = (1080 - (hw + 20 + 69 + 7 + 72)) / 2;
+    c.fillText(heading, hx + hw / 2, 310);
+    c.drawImage(faces, 820, 140, 650, 720, hx + hw + 20, 250, 69, 68);
+    c.drawImage(faces, 40, 170, 700, 680, hx + hw + 96, 250, 72, 68);
+
+    const title = shareText(c, winner.title, 740, 64, 38, 2, 900);
+    // Reserve the lower-right character's area instead of drawing text under it.
+    const desc = shareText(c, winner.desc || '', 500, 31, 25, 3, 500);
+    const cy = 350, titleY = cy + (winner.date ? 126 : 91);
+    const descY = titleY + (title.lines.length - 1) * title.lineHeight + 53;
+    const contentBottom = desc.lines.length ? descY + (desc.lines.length - 1) * desc.lineHeight : titleY + (title.lines.length - 1) * title.lineHeight;
+    const ch = Math.max(winner.desc ? 270 : 220, contentBottom - cy + 53);
+    c.save(); c.shadowColor = 'rgba(75,52,36,.2)'; c.shadowOffsetY = 10; c.shadowBlur = 12;
+    c.fillStyle = '#fffaf2'; rr(c, 90, cy, 900, ch, 48); c.fill(); c.restore();
+    c.strokeStyle = '#ff9418'; c.lineWidth = 7; rr(c, 90, cy, 900, ch, 48); c.stroke();
+    if (winner.date) {c.textAlign = 'left'; c.fillStyle = '#d96908'; c.font = '800 28px sans-serif'; c.fillText(winner.date, 145, cy + 57);}
+    c.textAlign = 'center';
+    paintShareText(c, title, 540, titleY, '#4b3424');
+    paintShareText(c, desc, 540, descY, '#72513a');
+    // Keep the prominent character overlapping the card, never shrink it.
+    c.drawImage(mascot, 795, cy + ch - 107, 205, 175);
+
+    let y = cy + ch + 84;
+    c.fillStyle = '#4b3424'; c.font = '900 36px sans-serif'; c.fillText('我的 TOP 3', 540, y);
+    y += 25;
+    for (const [i, item] of top3.entries()) {
+      const name = shareText(c, item.title, 595, 32, 27, 2, 800);
+      const rowHeight = Math.max(76, name.lines.length * name.lineHeight + 22);
+      c.fillStyle = i === 0 ? '#fff3e5' : '#fffaf2';
+      rr(c, 115, y, 850, rowHeight, 18); c.fill();
+      c.strokeStyle = i === 0 ? '#ff9418' : 'rgba(117,81,57,.25)'; c.lineWidth = i === 0 ? 3 : 2; c.stroke();
+      c.textAlign = 'left'; c.fillStyle = i === 0 ? '#d96908' : '#806754'; c.font = '900 30px sans-serif';
+      c.fillText(String(i + 1).padStart(2, '0'), 145, y + rowHeight / 2 + 11);
+      paintShareText(c, name, 216, y + (rowHeight - name.lines.length * name.lineHeight) / 2 + name.size, i === 0 ? '#d96908' : '#4b3424');
+      c.textAlign = 'right'; c.fillStyle = '#72513a'; c.font = '500 24px sans-serif';
+      c.fillText(item.date || '', 932, y + rowHeight / 2 + 9);
+      y += rowHeight + 14;
+    }
+
+    // Flow CTA and QR directly after TOP 3 instead of fixed, widely spaced slots.
+    c.textAlign = 'center'; c.fillStyle = '#d96908'; c.font = '900 43px sans-serif';
+    const ctaY = y + 42;
+    c.fillText('决战政瞳糖点之巅！', 540, ctaY);
+    const qrY = ctaY + 18;
+    const qrSize = Math.round(Math.min(510, 1610 - (ctaY + 26)) * .85);
+    if (qrSize < 300) throw new Error('Result text is too long for a clear QR');
+    const qrX = Math.round((1080 - qrSize) / 2);
+    c.save(); c.imageSmoothingEnabled = true; c.imageSmoothingQuality = 'high';
+    // Draw the FULL 1254px source directly to export pixels. No crop, no filter.
+    c.drawImage(qr, qrX, qrY, qrSize, qrSize); c.restore();
+    c.fillStyle = '#72513a'; c.font = '700 30px sans-serif';
+    c.fillText('扫码测你的政瞳冠军糖点', 540, qrY + qrSize + 30);
+
+    const blob = await new Promise(resolve => cv.toBlob(resolve, 'image/png'));
+    if (!blob) throw new Error('Image encoding failed');
+    const file = new File([blob], '我的政瞳糖点冠军.png', {type:'image/png'});
+    if (navigator.canShare && navigator.canShare({files:[file]})) {
+      try {await navigator.share({files:[file], title:'我的政瞳糖点冠军'}); return;} catch (error) {
+        if (error.name === 'AbortError') return;
+      }
+    }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  } catch (error) {
+    showBubble('分享图生成失败，请再试一次', 4);
+  } finally {
+    button.disabled = false; button.textContent = old;
+  }
+}
+
+</script></body></html>
